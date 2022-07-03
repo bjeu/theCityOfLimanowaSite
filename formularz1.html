@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="stronaGlowna">
+        <a class="przycisk1" href="index.html" title="Strona główna" target="_self">Powrót do strony głównej</a>
+    </div>
+
+    <form action="mailto:paweltrojanski@gmail.com" method="POST" name="form">
+        <p class="naglowek4">Aplikuj</p>
+        <table cellpadding=5>
+            <tr>
+                <td>
+                    Imię:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[a-z]{}" maxlength="25" name="imie" />
+                </td>
+                <td>
+                    Nazwisko:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[a-z]{}" maxlength="25" name="nazwisko" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="35"
+                        name="email" />
+                </td>
+                <td>
+                    Powtórz e-mail:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="35"
+                        name="email_p" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Wiek:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[1-9]{1}[0-9]{1}" maxlength="2" name="wiek"
+                        placeholder="Musisz być pełnoletni" />
+                </td>
+                <td>
+                    Miejscowość:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[a-z]{}" maxlength="35" name="miejscowosc" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <p class="naglowek5">Doświadczenie zawodowe</p> <br>
+                    <input type="radio" name="dosw"> Brak <br>
+                    <input type="radio" name="dosw"> do 3 lat <br>
+                    <input type="radio" name="dosw"> 4 - 8 lat <br>
+                    <input type="radio" name="dosw"> 9 - 15 lat <br>
+                    <input type="radio" name="dosw"> 16 i więcej lat <br>
+                </td>
+                <td>
+                    <p class="naglowek5">Wykształcenie</p> <br>
+                    <input type="radio" name="wyksz"> Podstawowe <br>
+                    <input type="radio" name="wyksz"> Gimnazjalne <br>
+                    <input type="radio" name="wyksz"> Średnie <br>
+                    <input type="radio" name="wyksz"> Wyższe (magister) <br>
+                    <input type="radio" name="wyksz"> Wyższe (lic. / inż.) <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <p class="naglowek5">Znane języki obce</p> <br>
+                    <input type="checkbox" name="jez"> Angielski <br>
+                    <input type="checkbox" name="jez"> Niemiecki <br>
+                    <input type="checkbox" name="jez"> Francuski <br>
+                    <input type="checkbox" name="jez"> Włoski <br>
+                    <input type="checkbox" name="jez"> Hiszpański <br><br>
+                </td>
+                <td colspan=2>
+                    <p class="naglowek5">Gdzie szukasz pracy?</p> <br>
+                    <select name="branza">
+                        <option>Rolnictwo/Leśnictwo</option>
+                        <option>Przemysł wydobywczy</option>
+                        <option>Przemysł produkcyjny</option>
+                        <option>Pozostały przemysł</option>
+                        <option>Budownictwo</option>
+                        <option>Usługi mechaniczne/elektryczne</option>
+                        <option>Usługi informatyczne</option>
+                        <option>Usługi transportowe</option>
+                        <option>Pozostałe usługi</option>
+                    </select>
+                    <br>
+                    <br>
+                    <p class="naglowek5">Umiejętności:</p> <br>
+                    <select name="umiej" multiple="multiple">
+                        <option>Zdolność komunikacji</option>
+                        <option>Praca w grupie</option>
+                        <option>Odporność na stres</option>
+                        <option>Prawo jazdy</option>
+                        <option>Obsługa komputera</option>
+                        <option>Znajomość pakietu MS Office</option>
+                        <option>Kierowanie wózkiem widłowym</option>
+                    </select>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <br>
+                    <p class="naglowek5">Informacje dodatkowe (można uzupełnić później)</p>
+                    <br><br>
+                    Opis profilu: <br>
+                    <textarea name="opis" cols="40" rows="8">Napisz coś o sobie</textarea>
+                    <br>
+                </td>
+            <tr>
+                <td colspan="2">
+                    Załącz swoje CV (.doc):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="CV" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Wgraj list motywacyjny (.doc):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="List" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Wgraj zdjęcie profilowe (.jpg):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="Zdj" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Wyczyść"></td>
+                <td><input type="submit" value="Wyślij"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

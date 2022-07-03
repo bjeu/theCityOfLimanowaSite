@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz studenta</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="stronaGlowna">
+        <a class="przycisk1" href="index.html" title="Strona główna" target="_self">Powrót do strony głównej</a>
+    </div>
+    <form action="mailto:paweltrojanski@gmail.com" method="POST" name="kartaDanychStudentow">
+        <p class="naglowek4">Karta danych studenta</p>
+        <table width="600" cellpadding="5">
+            <tr>
+                <td>
+                    Imię
+                </td>
+                <td>
+                    <input type="text" size="20" required pattern="[a-z]{}" maxlength="25" name="Imie" tabindex="1" />
+                </td>
+                <td>
+                    Nazwisko
+                </td>
+                <td>
+                    <input type="text" size="20" required pattern="[a-z]{}" maxlength="25" name="Nazwisko"
+                        tabindex="1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Wiek
+                </td>
+                <td>
+                    <input type="text" size="2" required pattern="[1-9]{1}[0-9]{1}" maxlength="2" name="Wiek"
+                        tabindex="1" />
+                </td>
+                <td>
+                    Nr Indeksu
+                </td>
+                <td>
+                    <input type="text" size="10" required pattern="[0-9]{}" maxlength="10" name="NrIndeksu"
+                        tabindex="1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Specjalność
+                </td>
+                <td>
+                    <input type="text" size="20" required pattern="[a-z]{}" maxlength="50" name="Specjalnosc"
+                        tabindex="1" />
+                </td>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <input type="text" size="25" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" maxlength="35"
+                        name="email" />
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Załącz swoje CV (.doc):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="CV" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Wgraj list motywacyjny (.doc):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="List" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Wgraj zdjęcie profilowe (.jpg):
+                </td>
+                <td colspan="2">
+                    <input type="file" name="Zdj" tabindex="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Wyczyść">
+                <td>
+                    <input type="submit" value="Wyślij">
+            </tr>
+        </table>
+    </form>
+
+
+
+    <form action="mailto:paweltrojanski@gmail.com" method="POST" name="Ankieta">
+        <p class="naglowek4">Wypełnij dodatkowo ankietę:</p>
+        <table>
+            <tr>
+                <td>
+                    <p class="naglowek5">Zaznacz swoje zainteresowania:</p>
+                    <input type="checkbox" name="Zainteresowania" tabindex="4"> Programowanie <br><br>
+                    <input type="checkbox" name="Zainteresowania" tabindex="4"> Grafika komputerowa <br><br>
+                    <input type="checkbox" name="Zainteresowania" tabindex="4"> Systemy operacyjne <br><br>
+                    <input type="checkbox" name="Zainteresowania" tabindex="4"> Technologie internetowe <br><br>
+                    <br>
+                    <p class="naglowek5">Wykształcenie</p>
+                    <input type="radio" name="Wyksztalcenie" tabindex="5"> Zawodowe <br><br>
+                    <input type="radio" name="Wyksztalcenie" tabindex="5"> Średnie <br><br>
+                    <input type="radio" name="Wyksztalcenie" tabindex="5"> Wyższe (inż. / lic. ) <br><br>
+                    <input type="radio" name="Wyksztalcenie" tabindex="5"> Wyższe (mgr) <br><br>
+                </td>
+                <td>
+                    <p class="naglowek5">Liczba mieszkańców miasta w którym mieszkasz:</p>
+                    <input type="radio" name="LiczbaM" tabindex="6"> Do 50 tysięcy <br><br>
+                    <input type="radio" name="LiczbaM" tabindex="6"> od 50 - 100 tysięcy <br><br>
+                    <input type="radio" name="LiczbaM" tabindex="6"> od 100 - 150 tysięcy <br><br>
+                    <input type="radio" name="LiczbaM" tabindex="6"> powyżej 150 tysięcy <br><br>
+                    <br>
+                    <p class="naglowek5">Języki obce:</p>
+                    <input type="checkbox" name="Jezyki" tabindex="7"> Angielski <br><br>
+                    <input type="checkbox" name="Jezyki" tabindex="7"> Francuski <br><br>
+                    <input type="checkbox" name="Jezyki" tabindex="7"> Niemiecki <br><br>
+                    <input type="checkbox" name="Jezyki" tabindex="7"> Hiszpański <br><br>
+                </td>
+        </table>
+        <br>
+        <table width="700">
+            <tr>
+                <td>
+                    <p class="naglowek5">Wybierz miasto:</p>
+                </td>
+                <td>
+                    <p class="naglowek5">Dodatkowe umiejętności:</p>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <select name="Miasto" tabindex="8">
+                        <option>Katowice</option>
+                        <option>Chorzów</option>
+                        <option>Bytom</option>
+                        <option>Piekary Śląskie</option>
+                        <option>Ruda Śląska</option>
+                        <option>Gliwice</option>
+                        <option>Zabrze</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="Umiejetnosci" multiple="multiple" tabindex="9">
+                        <option>Zdolność komunikacji</option>
+                        <option>Prawo jazdy</option>
+                        <option>Umiejętność pracy w grupie</option>
+                        <option>Odporność na stres</option>
+                        <option>Znajomość obsługi komputera</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Wyczyść">
+                <td>
+                    <input type="submit" value="Wyślij">
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

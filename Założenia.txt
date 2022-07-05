@@ -1,0 +1,16 @@
+Co powinien zawierać projekt (na ok. 5.0):
+-spójna i responsywna strona w html
+-funkcje w javascript
+-rozbudowany css
+-animacja w css/js (canvas etc)
+-spójny i pełny kod
+-treściwa strona (bez zapełniaczy)
+-zrobić np. menu, navbar
+-brak skopiowanych elementów
+-brak użytkowania gotowych API
+__________________________________________________________________
+
+Deadline do ostatniego dnia semestru (tj.18 lipca, godz.23:59).
+
+Drugi termin zaliczenia(ostateczny) - 6 września 2021 + 2 tygodnie
+__________________________________________________________________
